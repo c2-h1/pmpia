@@ -1,13 +1,11 @@
-// specific icon class definition
-// -------------------------
+@use "sass:string"; // 1. Add this line at the very top of your file
 
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
+// ... previous code ...
 
 @each $name, $icon in $fa-icons {
   .#{$fa-css-prefix}-#{$name} {
-    #{$fa-icon-property}: unquote("\"#{ $icon }\"");
-    #{$fa-duotone-icon-property}: unquote("\"#{$icon}#{$icon}\"");
+    // 2. Update usage here
+    #{$fa-icon-property}: string.unquote("\"#{ $icon }\"");
+    #{$fa-duotone-icon-property}: string.unquote("\"#{$icon}#{$icon}\"");
   }
 }
-

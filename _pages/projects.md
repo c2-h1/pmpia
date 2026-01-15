@@ -1,65 +1,129 @@
 ---
 layout: page
-title: projects
-permalink: /projects/
-description: A growing collection of your cool projects.
+title: 교육
+permalink: /classes/
+description: 실무 과정과 자격대비 과정을 포함합니다.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+display_categories:
+  - 실무 과정
+  - 자격대비 과정
+toc:
+  sidebar: left
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+## PMPIA 교육의 특장점
+
+<div class="education-cards">
+
+<div class="about-card" markdown="1">
+**단순 이론이 아니라 ‘적용 가능한 프랙티스’를 제공**
+
+- 실제 프로젝트 수행에 필요한 표준 템플릿과 사례를 중심으로 학습합니다.
+- 교육생의 프로젝트 환경에 맞춰 “우리 조직에서 어떻게 적용할지”까지 연결합니다.
+</div>
+
+<div class="about-card" markdown="1">
+**강의 중심이 아닌 Case Study 기반 워크샵**
+
+- 강의 중심이 아닌 워크샵 형태로 진행하며, ‘Learning by Doing’으로 체화합니다.
+- 주먹구구식 업무 방식에서 벗어나 재현 가능한 표준 프로세스를 구축하도록 돕습니다.
+</div>
+
+<div class="about-card" markdown="1">
+**국제 표준을 ‘우리 방식’으로 해석하는 역량 강화**
+
+- PMBOK Guide, PRINCE2, Agile 등 표준의 체계·프로세스를 이해하고, 조직·프로젝트 특성에 맞는 접근 방법론을 판단해 실무에 적용합니다.
+- 국제 표준을 그대로 ‘따르는 것’이 아니라, 우리 조직의 의사결정 구조·업무 흐름·성과 지표에 맞춰 프로세스와 산출물을 재설계하고 현장 실행력을 높일 수 있습니다.
+</div>
+
+<div class="about-card" markdown="1">
+**PeopleCert 공인 교육기관(ATO) 기반의 공식 교육 품질**
+
+- 피엠피아는 PRINCE2®, ITIL®, MSP®, MoP®, MoR®, P3O® 등 글로벌 베스트 프랙티스를 운영하는 PeopleCert(www.peoplecert.org)에 의해 인증된 공인 교육기관(ATO) 및 공인 시험기관(AEO)으로 국제적 기준에 부합하는 커리큘럼과 운영 체계 하에 교육을 제공합니다.
+- 국제 자격 과정에 요구되는 학습 목표와 평가 관점을 반영해, 수강생이 자격 학습과 실무 적용을 동시에 달성할 수 있도록 학습 경험을 설계합니다.
+</div>
+
+<div class="about-card" markdown="1">
+**25년+ 이상의 교육 진행에 따른 수치와 레퍼런스로 입증된 교육 신뢰도**
+
+- 피엠피아의 프로젝트 관리 교육은 25년+ 교육 노하우, 누적 수강 1만여 명 이상, 500회 이상 수업을 통해 효과와 만족도가 검증된 대표 과정입니다.
+- 매년 정규 집체 교육을 비롯해 온라인/라이브 과정으로 운영되며, 100여 개 이상의 국내 주요 기업이 채택한 경험을 바탕으로 최신의 프로젝트 관리 트렌드를 반영하여 교육의 내용과 운영방식을 지속적으로 개선해오고 있습니다.
+</div>
+
+<div class="about-card" markdown="1">
+**다양한 교육 형태로 제공되는 유연한 학습 경험**
+
+- 피엠피아는 정규 집체 교육, 온라인 교육, Microsoft Teams 기반 라이브 강좌, 기업 위탁 교육 등 다양한 운영 방식으로 교육을 제공하여, 조직의 교육 환경과 학습 목적에 맞춘 최적의 수강 방식을 선택할 수 있습니다.
+- 과정별 난이도·일정·참여 인원·현업 적용 과제(케이스/워크샵)를 유연하게 설계해, 개인 학습부터 조직 단위 역량 내재화까지 일관된 품질로 지원합니다.
+</div>
+
+<div class="about-card" markdown="1">
+**글로벌 표준 네트워크와 국내 대표 교육 파트너십으로 검증된 프로젝트 관리 교육**
+
+- 피엠피아는 프로젝트 관리 분야의 글로벌 대표 기관인 미국 PMI(Project Management Institute) 및 유럽 기반의 국제 인증기관 PeopleCert와의 협력 체계를 바탕으로, 국제 표준과 최신 베스트 프랙티스를 교육 과정에 반영합니다.
+- 동시에 **국내 No.1 직무 교육기관 한국생산성본부(KPC)**와 25년 이상 파트너십을 유지하며, 연간 정규 교육 운영부터 기업 맞춤형 과정까지 안정적인 제공 체계를 갖추고 폭넓은 학습 수요를 지원해 왔습니다.
+</div>
+
+<div class="about-card" markdown="1">
+**PMP PDU 인정 및 영문 수료증 제공**
+
+- PMP 응시·갱신에 필요한 PDU 인정(영문 수료증 제공)으로 학습 성과를 공식적으로 관리할 수 있습니다.
+</div>
+
+</div>
+
+---
+<br>
+
+## 교육 제공 방식
+
+피엠피아는 교육생과 고객사의 니즈 및 학습 환경에 맞춰 오프라인 집체교육·온라인 교육·기업 위탁 교육 등 다양한 교육 방식을 제공합니다. 오프라인 집체교육은 교육생이 지정된 교육일자에 신청해 참여하며, 표준 템플릿과 케이스 스터디 기반 워크샵을 통해 실무 적용 역량을 집중적으로 강화합니다. 온라인 교육은 언제 어디서든 수강할 수 있도록 구성해, 프로젝트 관리 핵심 개념과 기법을 자기 주도적으로 학습할 수 있습니다. 기업 위탁 교육은 고객사의 요청에 따라 현업 과제와 프로젝트 환경을 반영한 맞춤형 과정으로 설계·운영하여, 조직의 실행력 강화와 표준 프로세스 정착에 직접 연결합니다. 고객사와 교육생은 일정·장소·학습 방식·현업 적용 수준에 따라 최적의 교육 형태를 선택할 수 있으며, 피엠피아는 동일한 품질 기준 아래에서 그 선택이 실질적인 성과로 이어지도록 체계적으로 운영합니다.
+
+---
+
+<br>
+## 오프라인 교육
+
+<div class="classes">
+  <p class="classes-intro">실무 과정과 자격 대비 과정을 한 곳에서 확인하세요.</p>
+  {% if page.display_categories %}
+    <div class="classes-category-grid">
+      {% for category in page.display_categories %}
+        <div class="classes-box">
+          <h4 class="category">{{ category }}</h4>
+          {% assign categorized_projects = site.projects | where: "category", category | sort: "importance" %}
+          <div class="classes-list">
+            {% for project in categorized_projects %}
+              <div class="classes-list__item">
+                <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+                  <div class="card hoverable class-card">
+                    <div class="card-body class-card-body">
+                      <div class="card-title class-card-title" data-toc-skip>{{ project.title }}</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  </div>
   {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
-
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
+    {% assign sorted_projects = site.projects | sort: "importance" %}
+    <div class="classes-box">
+      <div class="classes-list">
+        {% for project in sorted_projects %}
+          <div class="classes-list__item">
+            <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
+              <div class="card hoverable class-card">
+                <div class="card-body class-card-body">
+                  <div class="card-title class-card-title" data-toc-skip>{{ project.title }}</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
   {% endif %}
-{% endif %}
 </div>

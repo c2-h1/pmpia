@@ -3,7 +3,7 @@
  ******************************************************************************/
 
 body {
-  padding-bottom: 70px;
+  padding-bottom: 0;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
 
@@ -22,11 +22,6 @@ body.fixed-top-nav {
   padding-top: 57px;
 }
 
-body.sticky-bottom-footer {
-  // Remove padding below footer.
-  padding-bottom: 0;
-}
-
 .container {
   max-width: $max-content-width;
 }
@@ -37,17 +32,3 @@ body.sticky-bottom-footer {
     width: 100%;
   }
 }
-
-// TODO: redefine content layout.
-
-/******************************************************************************
- * Publications
- ******************************************************************************/
-
-// TODO: redefine publications layout.
-
-/*****************************************************************************
-* Projects
-*****************************************************************************/
-
-// TODO: redefine projects layout.

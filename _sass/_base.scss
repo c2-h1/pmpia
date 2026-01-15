@@ -485,41 +485,57 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Footer
-footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+// Site bottom block
+.site-bottom {
+  background-color: #1c1c1d;
+  color: #9a9a9a;
   font-size: 0.75rem;
+  line-height: 1.6;
 
   .container {
-    color: var(--global-footer-text-color);
-    padding-top: 9px;
-    padding-bottom: 8px;
-    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .site-bottom-grid {
+    row-gap: 12px;
+  }
+
+  .site-bottom-col {
+    text-align: left;
+  }
+
+  .site-bottom-heading {
+    color: #9a9a9a;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.4rem;
+  }
+
+  p {
+    margin-bottom: 0.25rem;
+    color: #9a9a9a;
   }
 
   a {
-    color: var(--global-footer-link-color);
+    color: #9a9a9a;
 
     &:hover {
       color: var(--global-theme-color);
       text-decoration: none;
     }
   }
-}
 
-footer.sticky-bottom {
-  border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
-
-  .container {
+  .site-bottom-credit {
+    margin: 12px 0 0;
+    font-size: 0.7rem;
+    color: #9a9a9a;
     text-align: center;
   }
 }
 
 // CV
-
 .cv {
   margin-bottom: 40px;
 
@@ -555,121 +571,6 @@ footer.sticky-bottom {
 @media (min-width: 768px) {
   .repo {
     max-width: 50%;
-  }
-}
-
-// Blog
-
-.header-bar {
-  border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-
-  h1 {
-    color: var(--global-theme-color);
-    font-size: 5rem;
-  }
-}
-
-.tag-category-list {
-  border-bottom: 1px solid var(--global-divider-color);
-  text-align: center;
-  padding-top: 1rem;
-
-  ul {
-    justify-content: center;
-    display: flow-root;
-
-    p,
-    li {
-      list-style: none;
-      display: inline-block;
-      padding: 1rem 0.5rem;
-      color: var(--global-text-color-light);
-    }
-  }
-}
-
-.post-title {
-  mjx-container[jax="CHTML"][display="true"] {
-    display: unset;
-  }
-}
-
-.post-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-
-  li {
-    border-bottom: 1px solid var(--global-divider-color);
-    list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-
-    .post-meta {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      margin-bottom: 0;
-    }
-
-    .post-tags {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0;
-    }
-
-    a {
-      color: var(--global-text-color);
-      text-decoration: none;
-
-      &:hover {
-        color: var(--global-theme-color);
-      }
-    }
-
-    mjx-container[jax="CHTML"][display="true"] {
-      display: unset;
-    }
-  }
-}
-
-.pagination {
-  .page-item {
-    .page-link {
-      color: var(--global-text-color);
-      padding: 0.75rem 1.15rem;
-
-      &:hover {
-        color: $black-color;
-      }
-    }
-
-    &.active .page-link {
-      color: $white-color;
-      background-color: var(--global-theme-color);
-
-      &:hover {
-        background-color: var(--global-theme-color);
-      }
-    }
-  }
-}
-
-// diff2html - Fix for diff2html line number overflow
-
-.d2h-diff-table {
-  position: relative;
-}
-
-// Distill
-
-.distill {
-  a:hover {
-    border-bottom-color: var(--global-theme-color);
-    text-decoration: none;
   }
 }
 
