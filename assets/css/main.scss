@@ -847,7 +847,7 @@ ul li p { margin: 0; }
   margin-bottom: 0;
 }
 
-.home-community a:not(.home-btn) {
+.home-community a {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -857,12 +857,8 @@ ul li p { margin: 0; }
   text-decoration: none;
 }
 
-.home-community a:not(.home-btn):hover {
+.home-community a:hover {
   text-decoration: underline;
-}
-
-.home-community .home-btn {
-  gap: 0.5rem;
 }
 
 .home-reveal {
