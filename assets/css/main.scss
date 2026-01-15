@@ -1213,4 +1213,17 @@ header {
   .navbar-brand {
     font-weight: 1000 !important;
   }
+
+  .navbar-brand--with-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .navbar-brand__logo {
+    display: block;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
 }

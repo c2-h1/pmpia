@@ -2,8 +2,17 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
-          {{ site.title }}
+      <a class="navbar-brand title font-weight-lighter navbar-brand--with-logo" href="{{ site.baseurl }}/">
+        <img
+          class="navbar-brand__logo"
+          src="{{ '/assets/img/pmpia_logo.jpg' | relative_url }}"
+          alt="PMPIA 로고"
+          width="32"
+          height="32"
+          loading="eager"
+          decoding="async"
+        >
+        <span class="navbar-brand__text">{{ site.title }}</span>
       </a>
       {% if site.enable_navbar_social and page.permalink == '/' %}
         <!-- Social Icons -->
